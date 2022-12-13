@@ -1,0 +1,112 @@
+.headers__Main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.headers__Big__Main{
+    /* background-color: lightblue; */
+    border-bottom: 2px solid black;
+    margin-bottom: 40px;
+}
+
+.uploadPin__Sub{
+    min-height: 70vh;
+    width: 70vw;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.uploadPin__Main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.home__Vedios .home__vedio{
+    width: 70%
+   
+}
+
+.home__Sidebar{
+    width:"22%"
+}
+
+.home__vedio{
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 20px 0px 70px 0px;
+    /* background-color: black; */
+}
+
+.vedio__Wrapper{
+    
+    width: 100%;
+}
+
+
+.home__Sidebar{
+    /* background-color: black; */
+    position: sticky;
+    bottom: 0;
+    top: 0;
+    height: 60vh;
+}
+@media screen and (max-width:700px){
+    .uploads__Main{
+        flex-direction: column;
+    }
+    .home__Main{
+        flex-direction: column;
+    }
+    .home__Sidebar{
+        /* background-color: black; */
+        width: 100%;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    
+    
+}
+.del__Icon{
+    position: absolute;
+    top: 30px;
+    z-index: 100;
+    color: black;
+    visibility: hidden;
+    color: red;
+    cursor: pointer;
+}
+
+.current__User__Mian:hover .del__Icon{
+  visibility: visible;
+}
+
+.vedio__Wrapper_Current__User{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+
+}
+@media screen and (max-width:900px){
+    
+    .home__Vedios .home__vedio{
+        width: 100%; 
+    }
+
+    .single__Vedio__Main{
+        flex-direction: column;
+    }
+    .single__Vedio__Main__Vedio{
+        position: none;
+        width: 0000px;
+
+    }
+   .single__Vedio__Main .vedio__Wrapper{
+        height:30vh;
+    /* background: red; */
+   }
+}
